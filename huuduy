@@ -1,0 +1,121 @@
+</head>
+<body >
+    <video autoplay muted plays-inline loop>
+        <source src="./img/video.mp4" type="video/mp4">
+        <source src="./img/video (2).mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <button class="call"><i class="fa-solid fa-phone"></i></button>
+        <div class="card move">
+            <div class="imgbox">
+                <img src="./img/273938833_632355901326918_5333297370648698660_n.jpg" alt="">
+            </div>
+            <div class="name-job">
+                <h3>Trần Duy Đức</h3>
+                <h5>Web Developer</h5>
+            </div>
+           
+            <div class="skills">
+                <button class="btn-Follow"><a href="https://www.tiktok.com/@tranduc99v9?fbclid=IwAR0dtT09iGSXdidNpFMbXaqE9cwyZGUpYacY1dto5hxUhybfaEwZpj-A5HU">Follow</a></button>
+                <button class="btn-Message"><a href="https://www.facebook.com/profile.php?id=100036575412428">Message</a>   </button>
+    <div class="card move">
+       <div class="imgbox">
+          <img src="./img/273938833_632355901326918_5333297370648698660_n.jpg" alt="">
+       </div>
+       <div class="name-job">
+          <h3>Trần Duy Đức</h3>
+          <h5>Web Developer</h5>
+        </div>
+        <div class="skills">
+          <button class="btn-Follow"><a href="https://www.tiktok.com/@tranduc99v9?fbclid=IwAR0dtT09iGSXdidNpFMbXaqE9cwyZGUpYacY1dto5hxUhybfaEwZpj-A5HU">Follow</a></button>
+          <button class="btn-Message"><a href="https://www.facebook.com/profile.php?id=100036575412428">Message</a>   </button>
+        </div>
+
+            </div>
+        </div>
+        <div class="icons">
+            <div class="icon">
+  39  
+style.css
+@@ -6,25 +6,40 @@
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --width: 260px;
+    --width: 250px;
+    --height: 260px;
+    --i-width: calc(var(--height)*0.25 - 23px);
+}
+video{
+    height: 100%;
+    width: 100%;
+
+
+@media only screen and (min-width:64.1875em){
+    video{
+       height: 100%;
+       width: 100%;
+    }
+
+}
+@media only screen and (min-width:46.1875em) and (max-width:63.9375em){
+    video{
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        height: 100%;
+        display: block;
+    }
+}
+@media only screen and (max-width:46.1875em){
+    video{
+
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        height: 100vh;
+        height: 100%;
+        display: block;
+    }
+
+}
+@@ -253,11 +268,11 @@ body::after {
+}
+.btn-Follow a{
+    text-decoration: none;
+    color: #fff;
+    color: black;
+}
+.btn-Follow{
+    background-color: rgb(36, 219, 36);
+    border-radius: 3px;
+    border-radius: 1px;
+    border: none;
+}
+.btn-Follow:hover{
+@@ -266,7 +281,10 @@ body::after {
+}
+.btn-Message a{
+    text-decoration: none;
+    color: #fff;
+    color: rgb(36, 219, 36);
+}
+.btn-Message a:hover{
+    color: #000;
+}
+.btn-Message{
+    border: 1px solid rgb(36, 219, 36);
+@@ -276,6 +294,7 @@ body::after {
+}
+.btn-Message:hover{
+    background-color:  rgb(2, 250, 2);
+    color: red;
+}
+.skills .fa-brands {
+    cursor: pointer;
